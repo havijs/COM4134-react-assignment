@@ -1,0 +1,46 @@
+:root {
+    --primary-color: rgb(55, 115, 180);
+    --secondary-color: rgb(171, 205, 234);
+    --light-gray: rgb(233, 233, 233);
+    --dark-gray: rgb(121, 121, 121);
+}
+body {
+    min-width: 500px;
+}
+
+input, textarea{
+    background: var(--light-gray);
+    border: none;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid var(--dark-gray);
+    margin: 10px;
+}
+input:focus-visible, textarea:focus-visible { 
+    outline: none;
+}
+button {
+    color: white;
+    background: var(--primary-color);
+}
+#navbar {
+    color: white;
+    background: var(--primary-color);
+}
+
+#add-task {
+    display: flex;
+    flex-direction: column;
+}
+
+#task-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-box {
+    margin: 16px;
+}
+
+.task-status {
+    margin-bottom: 16px;
+}
